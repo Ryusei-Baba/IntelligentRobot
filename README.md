@@ -5,15 +5,15 @@
 ・red-ball   
 ・blue-ball   
 ・yellow-ball
-###
+***
 # デモ動画
 ・[ボール検出](https://youtu.be/1wTWfVXPn9M)
-###
+***
 # 使用機器
 ・Raspberry Pi 4 Model B   
 ・Raspberry Pi Camera V2   
 ・Coral USB Accelerator   
-###
+***
 # チュートリアル
 **〇環境構築**   
 ※Ubuntu MATE 20.04 LTSをラズパイにインストールしましたが、ここでは省略します。（他のサイトをご覧ください）   
@@ -34,7 +34,7 @@
 
 ・ロックできません   
 →参考にしたサイトが見れなくなり、どのように解決したか忘れてしまいました。「Ubuntu　ロックを取得できない」等で検索してみてください。   
-###
+***
 **〇物体検出**
 googleが提供しているデータセットで物体検出をしてみましょう。参考にしたサイトは[こちら](https://qiita.com/rhene/items/1d6c267b1b739f337a75)   
 [物体検出動画](https://youtu.be/tYLJrUAgkyY)   
@@ -48,7 +48,7 @@ opencvで検出を行う場合は[こちら](https://github.com/Ryusei-Baba/Inte
 →coralが熱くなっているか確認、冷たかったら抜き差しで解消
 
 [物体検出動画座標入り](https://youtu.be/rCMAQIY7D6E)
-###
+***
 # データ収集
 チュートリアルが終わったら、データセットを作ってみましょう。   
 
