@@ -1,0 +1,16 @@
+item {
+	name: 'Untitled Label'
+	id: 1
+}
+item {
+	name: 'red-ball'
+	id: 2
+}
+item {
+	name: 'blue-ball'
+	id: 3
+}
+item {
+	name: 'yellow-ball'
+	id: 4
+}
