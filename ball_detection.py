@@ -1,5 +1,5 @@
 # Copyright 2019 Google LLC
-# Copyright 2022 Ryusei-Baba
+# Copyright 2022 Ryusei Baba
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -84,23 +84,28 @@ def append_objs_to_img(cv2_im, inference_size, objs, labels):
         x0, y0 = int(bbox.xmin), int(bbox.ymin)
         x1, y1 = int(bbox.xmax), int(bbox.ymax)
 
-        
+        #確認用
         #print(height, width)
         #print(x0, y0, x1, y1)
 
         percent = int(100 * obj.score)
         label = '{}% {}'.format(percent, labels.get(obj.id, obj.id))
-            #
+        
+        #四角形
         cv2_img = cv2.rectangle(cv2_im, (x0, y0), (x1, y1), (0, 255, 0), 2)
-        #
+        
+        #カメラ画像の中心座標
         cv2_img = cv2.drawMarker(cv2_im, (320, 240), (0, 0, 255),markerType=cv2.MARKER_CROSS, markerSize=20, thickness=2)
+        
+        #labelの表示
         cv2_im = cv2.putText(cv2_im, label, (x0, y0+30),
                              cv2.FONT_HERSHEY_SIMPLEX, 1.0, (255, 0, 0), 2)
 
-        #
+        #物体中心座標
         xx = str(int((x1 - x0) / 2 + x0))
         yy = str(int((y1 - y0) / 2 + y0))
-        #
+        
+        #表示方法
         cordinate =  xx + ',' + yy
         cv2.putText(cv2_img, cordinate, (x0, y0+60), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (255, 0, 255), 2)
 
@@ -108,5 +113,3 @@ def append_objs_to_img(cv2_im, inference_size, objs, labels):
 
 if __name__ == '__main__':
     main()
-
-    
