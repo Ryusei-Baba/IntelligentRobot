@@ -133,3 +133,8 @@ NameError: name 'contrib_training' is not defined
 VNCにログインしなくても動作しました。
 
 ### [動作動画](https://youtu.be/1wTWfVXPn9M)
+***
+# 参考
+[【Raspberry Pi】ディープラーニングで検出したオブジェクトの位置情報を取得する](https://murasan-net.com/index.php/2022/02/12/post-613/)   
+[【OpenCV】cv2.rectangle関数の使い方【長方形を描画する】](https://shikaku-mafia.com/opencv-rectangle/)   
+[【Python】OpenCVでの図形や文字列の描画まとめ（四角形・線分・矢印・円・楕円・マーク・多角形）](https://qiita.com/atchicken/items/4b17d5b1b8ef014a8331)   
